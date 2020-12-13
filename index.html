@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversion</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <h1 class="header">Type Converter</h1>
+  <div class="div-contents">
+  <div class="main-content">
+   <h1>Number Conversion</h1>
+   <div class="content">
+       <h2>Decimal :</h2>
+       <input type="text" id="decimal" onclick="InitialValue(1)">
+       <h2>Binary :</h2>
+       <input type="text" id="binary" onclick="InitialValue(2)">
+       <h2>Octal :</h2>
+       <input type="text" id="octal" onclick="InitialValue(3)">
+       <h2>Hexadecimal :</h2>
+       <input type="text" id="hexadecimal" onclick="InitialValue(4)">
+    </div>
+    <div class="butn">
+        <button id="btn" onclick="Reset()">Reset</button>
+    </div>
+   </div>
+   <div class="text-conversion">
+       <div class="text-content">
+           <h1>Text↔Binary</h1>
+           <h2>Text :</h2>
+           <textarea name="text" id="text-area" class="textArea" cols="20" rows="20" placeholder="Write Text" onclick="InitialValue(5)"></textarea>
+           <h2>Binary :</h2>
+           <textarea name="text" id="text-area" class="textBinary" cols="20" rows="20" placeholder="Write Binary Number" onclick="InitialValue(2)"></textarea>
+       </div>
+       <div class="butn">
+        <button id="btn" onclick="Reset()">Reset</button>
+    </div>
+   </div>
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="index.js"></script>
+</body>
+</html>
